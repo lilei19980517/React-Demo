@@ -1,0 +1,11 @@
+.nav-root{
+    position: relative;
+    .am-navbar{
+        background-color: #ddd;
+    }
+    i{
+        color: #666;
+        font-size: 14px;
+    }
+    z-index: 2 !important;
+}

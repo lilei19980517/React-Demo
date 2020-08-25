@@ -1,0 +1,24 @@
+.search-root-input{
+    padding: 0 10px;
+    .search-root-input-box{
+        background-color: #fff;
+        border-radius: 5px;
+        // background-color: #fff;
+        height:35px;
+        // min-width: 300px;
+        width: 85%;
+        padding: 2px 10px;
+        margin-right: 10px;
+        .search-root-input-value{
+            margin-left: 5px;
+            padding-left: 5px;
+            font-size: 18px;
+            line-height: 30px;
+            border-left: 1px solid #ddd;
+        }
+        .search-root-input-value input::placeholder{
+            font-size: 15px;
+            
+        }
+    }
+}

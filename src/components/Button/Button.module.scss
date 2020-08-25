@@ -1,0 +1,12 @@
+.butonsBox{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    :global(.button-root){
+        flex:1;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+    }
+}

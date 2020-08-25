@@ -1,0 +1,16 @@
+.home-root{
+    width: 100%;
+    height: 100%;
+}
+.home-root .am-tab-bar{
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    bottom:0;
+}
+.home-root .home-root-tabs {
+   font-size: 20px;
+}
+.home-root .home-root-tabs i{
+    font-size: 25px;
+ }

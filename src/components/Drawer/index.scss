@@ -1,0 +1,63 @@
+.drawer-root{
+    .my-drawer{
+        // width: 80%;
+        .am-drawer-sidebar{
+            width: 80%;
+        }
+    }
+    .am-list-body:before{
+        content: none;
+    }
+    .drawer-root-box{
+        padding-bottom: 50px;
+        height: 100%;
+        overflow: hidden;
+    }
+    [class^='Button_butonsBox']{
+        position: fixed;
+    }
+    .drawer-root-list{
+        overflow: hidden auto;
+        padding-top:15px;
+        height: 100%;
+        width: 100% !important;
+        background-color: #fff;
+        .am-list-body:before{
+            height: 0 !important;
+        } 
+        
+        .drawer-root-title{
+            font-size: 18px;
+            font-weight: 550;
+            margin-bottom: 15px;
+        }
+        .drawer-root-items{
+            display: flex;
+            flex-wrap: wrap;
+            .drawer-root-items-item{
+                text-align: center;
+                height: 30px;
+                flex: 33.333%;
+                margin-bottom: 20px;
+                span{
+                    display: block;
+                    box-sizing: border-box;
+                    height: 35px;
+                    line-height: 33px;
+                    border-radius: 5px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    margin-right: 20px;
+                    padding: 0 5px;
+                }
+                .isActive{
+                    border: 1px solid #0fa550;
+                    background-color: #0022ff12
+                }
+            }
+        }
+    }
+    .am-drawer.am-drawer-right .am-drawer-draghandle{
+        width: 0px !important;
+    }
+}

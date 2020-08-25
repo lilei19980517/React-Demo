@@ -1,0 +1,7 @@
+.picker{
+    position: relative;
+    width: 100%;
+    :global(.am-picker){
+        background-color: #fff;
+    }
+}
