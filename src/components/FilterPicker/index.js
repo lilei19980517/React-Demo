@@ -4,13 +4,6 @@ import Button from '../Button/Button'
 import { PickerView } from 'antd-mobile'
 
 class FilterPicker extends React.Component {
-	constructor(props) {
-		super(props)
-		// this.state = {
-		// }
-	}
-
-
 
 	render() {
 		return <div class={styles.picker}>

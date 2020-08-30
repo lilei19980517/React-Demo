@@ -2,12 +2,10 @@ import React from 'react';
 import { Route } from 'react-router-dom'
 import Index from '../Index/index'
 import FindHouse from '../FindHouse/index'
-import News from '../News/index'
 import Profile from '../Profile/index'
 import { TabBar } from 'antd-mobile';
 import './index.css'
 // axios公共属性
-import instance from '../../utils/axios'
 class Home extends React.Component {
   constructor(props) {
 

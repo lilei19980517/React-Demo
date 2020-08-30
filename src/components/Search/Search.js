@@ -2,10 +2,7 @@ import React from 'react';
 import { Flex } from 'antd-mobile';
 import './Search.scss'
 class Search extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
+  
     render() {
         return (
             <div className='search-root'>

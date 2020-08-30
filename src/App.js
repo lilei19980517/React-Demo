@@ -7,7 +7,6 @@ import Login from './pages/Login'
 import Registe from './pages/Registe'
 import './assets/fonts/iconfont.css'
 class App extends React.Component {
-  componentDidMount(){console.clear()}
   render() {
     return (
           <BrowserRouter>

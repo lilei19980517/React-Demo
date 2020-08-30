@@ -6,6 +6,7 @@ import instance from '../../utils/axios'
 import { Toast } from 'antd-mobile'
 import { Link } from 'react-router-dom'
 import { AutoSizer, List } from 'react-virtualized'
+import { BASE_URL } from '../../utils/url';
 const BMap = window.BMap
 
 class Map extends React.Component {
@@ -198,7 +199,7 @@ class Map extends React.Component {
         <div className={styles.imgWrap}>
           <img
             className={styles.img}
-            src={`http://192.168.1.6:8080${housesList[index].houseImg}`}
+            src={`${BASE_URL}${housesList[index].houseImg}`}
             alt=""
           />
         </div>

@@ -3,7 +3,8 @@ import { Carousel, Flex, Grid } from 'antd-mobile';
 import CardList from "../../components/CardList/Card"
 import Search from '../../components/Search/Search'
 import './index.scss'
-import axios from 'axios'
+import instance from '../../utils/axios'
+import{ BASE_URL }from '../../utils/url'
 // 轮播图下面按钮图片地址
 import navImgUrl1 from '../../assets/images/nav-1.png'
 import navImgUrl2 from '../../assets/images/nav-2.png'
@@ -11,18 +12,15 @@ import navImgUrl3 from '../../assets/images/nav-3.png'
 import navImgUrl4 from '../../assets/images/nav-4.png'
 // 处理请求回来的数组中图片路径前缀方法
 const arrHandle = require('../../utils/arrHandle')
-const url = 'http://192.168.1.6:8080'
-const instance = axios.create({
-  baseURL: url,
-  timeout: 1000,
-  headers: { 'X-Custom-Header': 'foobar' }
-});
+
+// const instance = axios.create({
+//   baseURL: BASE_URL,
+//   timeout: 1000,
+//   headers: { 'X-Custom-Header': 'foobar' }
+// });
 
 // 轮播图下面的菜单
 class CaiDan extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       this.props.data.map(item =>
@@ -56,7 +54,7 @@ CaiDan.defaultProps = {
     {
       id: 3,
       title: '地图找房',
-      path: '#',
+      path: '/map',
       imgSrc: navImgUrl3
     },
     {
@@ -163,7 +161,7 @@ class Index extends React.Component {
       }
     })
     // 处理一下图片路径
-    const newArr = arrHandle.arr1(res.data.body, 'imgSrc', url)
+    const newArr = arrHandle.arr1(res.data.body, 'imgSrc', BASE_URL)
  
     this.setState({
       newsData: Object.assign(
@@ -207,7 +205,7 @@ class Index extends React.Component {
           {this.state.data.map(item =>
             <img
               key={item.id}
-              src={url + item.imgSrc}
+              src={BASE_URL + item.imgSrc}
               alt=''
               style={{ width: '100%' }}
             />
@@ -247,7 +245,7 @@ class Index extends React.Component {
               {/* 左边图片 */}
               <img
                 className='grid-img'
-                src={url + item.imgSrc}
+                src={BASE_URL + item.imgSrc}
                 alt={item.title}
               />
             </Flex>

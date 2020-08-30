@@ -6,7 +6,6 @@ import { BASE_URL } from '../../utils/url'
 import { Formik, Form, Field,ErrorMessage} from 'formik'
 import {Toast} from 'antd-mobile'
 import { setToken} from '../../utils/auth'
-import * as Yup from 'yup'
 import styles from './index.module.css'
 
 // 验证规则：
@@ -38,7 +37,7 @@ class Registe extends Component {
             if(username.trim().length===0 || !REG_UNAME.test(username.trim())){
               errors.username = '用户名必须6-9位大小写字母、下划线_、数字，且不能数字开头'
             } 
-            if(password.trim().length === 0 || !REG_UNAME.test(username.trim())){
+            if(password.trim().length === 0 || !REG_PWD.test(username.trim())){
               errors.password = '密码必须是5到8位的大小写字母、数字、下划线_'
             }
             if(passwordAgain !== password){

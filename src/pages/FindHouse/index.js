@@ -4,6 +4,7 @@ import Filter from '../../components/Filter/index'
 import styles from './index.module.scss'
 import instance from '../../utils/axios'
 import { Toast } from 'antd-mobile'
+import{ BASE_URL }from '../../utils/url'
 class FindHouse extends Component {
   constructor(props) {
     super(props)
@@ -196,7 +197,7 @@ class FindHouse extends Component {
         <div className={styles.imgWrap}>
           <img
             className={styles.img}
-            src={`http://192.168.1.6:8080${listData[index].houseImg}`}
+            src={BASE_URL+listData[index].houseImg}
             alt=""
           />
         </div>
@@ -226,7 +227,6 @@ class FindHouse extends Component {
     return <div
       className={styles['findhouse-root']}
       onScroll={(e) => {
-        const top = e.currentTarget.scrollTop
         // 跟着子元素一起动,吸顶效果 最多动50px
         if (e.target.className.indexOf('findhouse-root') >= 0) {
           // 一不做二不休

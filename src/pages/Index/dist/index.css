@@ -1,0 +1,69 @@
+.index-root .am-flexbox-item h2.caidan-text {
+  margin: 0;
+  padding: 0;
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.index-root .caidan-centent {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.index-root {
+  padding-bottom: 0.1px;
+}
+.index-root .align-r {
+  text-align: right;
+}
+.index-root .align-l {
+  text-align: left;
+}
+.index-root .search-root {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 1;
+}
+.index-root .index-root-groups {
+  font-size: 18px;
+  color: #888;
+  padding: 10px 20px;
+}
+.index-root .index-root-grid {
+  padding: 0 10px;
+}
+.index-root .index-root-grid > div:not(:first-child) {
+  margin-top: 10px;
+}
+.index-root .index-root-grid .am-grid-item:nth-child(2n-1) {
+  margin-right: 10px;
+}
+.index-root .index-root-grid * {
+  background-color: transparent;
+}
+.index-root .index-root-grid .am-grid-item-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.index-root .index-root-grid .grid-flexbox {
+  height: 80px;
+  background-color: #fff;
+}
+.index-root .index-root-grid .grid-item-text {
+  height: 100%;
+  margin-left: 10px;
+}
+.index-root .index-root-grid .grid-item-text h1 {
+  font-size: 18px;
+}
+.index-root .index-root-grid .grid-item-text h2 {
+  font-size: 14px;
+  color: #888;
+}
+.index-root .index-root-grid .grid-img {
+  width: 60px;
+}
